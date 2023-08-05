@@ -1,0 +1,131 @@
+/* layout Presets */
+*
+{
+    margin :0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+#blue-banner
+{
+    background-color: rgb(15, 160, 218);
+}
+
+
+body 
+{
+    display: grid;
+    /* border: 5px solid yellow; */
+    grid-template-columns: 10% 90%;
+    height: 100vh;
+    overflow:hidden
+    
+}
+
+
+main
+{
+    display:grid;
+    /* border: 5px solid pink; */
+    padding-left: 5vw;
+        
+}
+
+.login-box
+{
+    display:grid;
+    /* border: 5px solid brown; */
+    grid-template-columns: 50% 50%;
+    margin-bottom: 20vh;
+    padding: 3vh;
+
+}
+
+/* Main edit */
+main h2
+{
+    color: rgb(15, 160, 218);
+    margin-top: 20px;
+    margin-left:20px;
+    
+}
+
+
+form input
+{
+    width:100px;
+    border:none;
+    width:25vw; 
+    outline:none;
+    margin-top: 5px;
+}
+
+label
+{
+    color:#adadad;
+}
+
+.input-box
+{
+    border-bottom: 1px solid grey;
+    width : 25vw;
+}
+
+
+/* State and city drop down alignment */
+
+#location
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    
+}
+
+#location div 
+{
+    width: 7vw;
+}
+
+ #State , #City
+{
+    width:100%;
+}
+
+
+
+/* Button edit */
+
+
+main input
+{
+
+    border:none;
+    border-radius: 10px;
+    padding: 14px;
+    background-color: white;
+    font-size: 15px;
+    color:#adadad;
+    
+}
+
+
+main button
+{
+    border-radius: 25px;
+    position:absolute;
+    right: 25vh;
+    font-size: 15px;
+    padding: 20px 60px;
+    background-color:  rgb(15, 160, 218);
+    color:white;
+    border:none;
+}
+
+
+
+
+
+
+
+
