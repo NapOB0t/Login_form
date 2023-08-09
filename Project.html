@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WPR Project login form</title>
-
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="project.css">
 </head>
 <body>
     <aside id ="blue-banner">
@@ -14,60 +13,83 @@
     <main id = "Form-main">
     <header><h2>Basic Details</h2></header> 
     <form action = "" class = "login-box" id="dataEntry">
-        <section id = "right">     
-                <label for="fName">First Name</label><br>
-                <input type = "text" id="fName" name="fName"> <br>
-
-                <label for="Email">Email ID</label><br>
-                <input type = "email" id="Email" name="Email" >
-                <i class='bx bx-check' ></i><br><!--this should come up after the emmail is succefully validated in java-->
-                <label for="Country">Country</label><br>
-                <input list="Countries" id="Country" name="Country">
-                <datalist  id="Countries" >
-                    <option value="Spain">
-                    <option value="South Africa">
-                    <option value="Korea">
-                </datalist>
+        <section id = "right">
+                <div class="input-box">
+                    <label for="fName">First Name</label><br>
+                    <input type = "text" id="fName" name="fName"> 
+                </div>     
+                <br>
+                <div class="input-box">
+                    <label for="Email">Email ID</label>
+                    <input type = "email" id="Email" name="Email" >   
+                    <!-- <i class='bx bx-check' ></i><br>this should come up after the emmail is succefully validated in java -->
+                </div>  
+                <br>
+                <div class="input-box">
+                    <label for="Country">Country</label><br>
+                    <input list="Countries" id="Country" name="Country">
+                    <datalist  id="Countries" >
+                        <option value="Spain">
+                        <option value="South Africa">
+                        <option value="Korea">
+                    </datalist>   
+                </div> 
                     <br>
-                <label for="PhoneNumber">Phone Number</label><br>
-                <input type = "number" id="PhoneNumber" name="PhoneNumber"> <br>
+
+                <div class="input-box">
+                    <label for="PhoneNumber">Phone Number</label><br>
+                    <input type = "text" id="PhoneNumber" name="PhoneNumber">          
+                </div>  
+                <br>
+               
         </section>
 
-        <section id="left">
-                <label for="lName">Last Name</label><br>
-                <input type = "text" id="lName" name="lName"> <br>
+        <section id="left">          
+                <div class="input-box">
+                    <label for="lName">Last Name</label><br>
+                    <input type = "text" id="lName" name="lName">         
+                </div>  
+                 <br>
+                 <div class="input-box">
+                    <label for="UserID">Your User ID</label><br>
+                    <input type = "text" id="UserID" name="UserID">  
+                    <!-- <i class='bx bx-lock'></i>      -->
+                </div>  
+                <br>
+            <div id="location">
+                <div class="input-box">
+                    <label for="State">State</label><br>
+                    <input list="states" id="State", name="State">
+                    <br>
+                    <datalist id="states" >
+                        <option value="Limpopo">Limpopo</option>
+                        <option value="Missisipi">Missisipi</option>
+                        <option value="Gauteng">Gauteng</option>
+                    </datalist>
+                </div>
 
-                <label for="UserID">Your User ID</label><br>
-                <input type = "text" id="UserID" name="UserID">
-                <i class='bx bx-lock'></i><br>
-
-                <label for="State">State</label><br>
-                <input list="states" id="State", name="State">
+                <div class="input-box">
+                    <label for="City">City</label>
+                    <br>
+                    <input list="cities" id="City" name="City">
+                    <datalist  id="cities" >
+                        <option value="Joburg">Joburg</option>
+                        <option value="Cape Town">Cape Town</option>
+                        <option value="London">London</option>
+                    </datalist> 
+                </div>
                 <br>
-                <datalist id="states" >
-                    <option value="Limpopo">Limpopo</option>
-                    <option value="Missisipi">Missisipi</option>
-                    <option value="Gauteng">Gauteng</option>
-                </datalist>
-                
-                <label for="City">City</label>
+            </div>
                 <br>
-                <input list="cities" id="City" name="City">
-                <datalist  id="cities" >
-                    <option value="Joburg">Joburg</option>
-                    <option value="Cape Town">Cape Town</option>
-                    <option value="London">London</option>
-                </datalist> 
-                <br>
-                <br>
-                <input type = "" id="ReferenceCode" name="ReferenceCode" placeholder="Reference Code"> <br>
-                <br>   
+                <div class="input-box" >
+                    <input type = "" id="ReferenceCode" name="ReferenceCode" placeholder="Reference Code"> <br> 
+                </div>            
         </section>
-        <footer>
-           <input type="reset">
-           <button>Continue</button>
-        </footer>
     </form>
-    </main>
+    <footer>
+        <input type="reset">
+        <button>Continue</button>
+     </footer>
+    </main> 
 </body>
 </html>
