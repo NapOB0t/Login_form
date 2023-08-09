@@ -12,22 +12,22 @@
     </aside>
     <main id = "Form-main">
     <header><h2>Basic Details</h2></header> 
-    <form action = "" class = "login-box" id="dataEntry">
+    <form action = "" class = "login-box" id="dataEntry" name="dataEntry">
         <section id = "right">
                 <div class="input-box">
                     <label for="fName">First Name</label><br>
-                    <input type = "text" id="fName" name="fName"> 
+                    <input type = "text" id="fName" name="fName" onfocusOut="return validateName()"> 
                 </div>     
                 <br>
                 <div class="input-box">
                     <label for="Email">Email ID</label>
-                    <input type = "email" id="Email" name="Email" >   
+                    <input type = "email" id="Email" name="Email" onfocusOut="return validateEmail()" >   
                     <!-- <i class='bx bx-check' ></i><br>this should come up after the emmail is succefully validated in java -->
                 </div>  
                 <br>
                 <div class="input-box">
                     <label for="Country">Country</label><br>
-                    <input list="Countries" id="Country" name="Country">
+                    <input list="Countries" id="Country" name="Country" onfocusOut="return validateCountry()">
                     <datalist  id="Countries" >
                         <option value="Spain">
                         <option value="South Africa">
@@ -38,7 +38,7 @@
 
                 <div class="input-box">
                     <label for="PhoneNumber">Phone Number</label><br>
-                    <input type = "text" id="PhoneNumber" name="PhoneNumber">          
+                    <input type = "text" id="PhoneNumber" name="PhoneNumber" onfocusOut="return validateNumber()">          
                 </div>  
                 <br>
                
@@ -88,8 +88,9 @@
     </form>
     <footer>
         <input type="reset">
-        <button>Continue</button>
+        <button id="btnContinue">Continue</button>
      </footer>
     </main> 
+    <script src="Project.js"></script>
 </body>
 </html>
