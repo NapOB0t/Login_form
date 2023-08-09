@@ -72,7 +72,19 @@ label
     width : 25vw;
 }
 
+select,option
+{
+    border:none;
+    outline:none;
+    /* font-weight: bold; */
+}
 
+
+
+#Countries
+{
+    width:25vw;
+}
 /* State and city drop down alignment */
 
 #location
@@ -84,12 +96,12 @@ label
 
 #location div 
 {
-    width: 7vw;
+    width: 8vw;
 }
 
- #State , #City
+ #states , #cities
 {
-    width:100%;
+    width:10vw;
 }
 
 

@@ -26,13 +26,16 @@
                 </div>  
                 <br>
                 <div class="input-box">
-                    <label for="Country">Country</label><br>
-                    <input list="Countries" id="Country" name="Country">
-                    <datalist  id="Countries" >
-                        <option value="Spain">
-                        <option value="South Africa">
-                        <option value="Korea">
-                    </datalist>   
+                    <label for="Country">Country</label>
+                    <br>
+                    <br>
+                    <!-- <input list="Countries" id="Country" name="Country"> -->
+                    <select  id="Countries" >
+                        <option value="Default">Default</option>
+                        <option value="Spain" selected>Spain</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Korea">Korea</option>
+                    </select>   
                 </div> 
                     <br>
 
@@ -59,24 +62,26 @@
             <div id="location">
                 <div class="input-box">
                     <label for="State">State</label><br>
-                    <input list="states" id="State", name="State">
+                    <!-- <input list="states" id="State", name="State"> -->
                     <br>
-                    <datalist id="states" >
-                        <option value="Limpopo">Limpopo</option>
+                    <select id="states" >
+                        <option value="Default">Default</option>
+                        <option value="Limpopo" selected>Limpopo</option>
                         <option value="Missisipi">Missisipi</option>
                         <option value="Gauteng">Gauteng</option>
-                    </datalist>
+                    </select>
                 </div>
 
                 <div class="input-box">
                     <label for="City">City</label>
-                    <br>
-                    <input list="cities" id="City" name="City">
-                    <datalist  id="cities" >
-                        <option value="Joburg">Joburg</option>
+                    <br><br>
+                    <!-- <input list="cities" id="City" name="City"> -->
+                    <select  id="cities" >
+                        <option value="Default">Default</option>
+                        <option value="Joburg" selected>Joburg</option>
                         <option value="Cape Town">Cape Town</option>
                         <option value="London">London</option>
-                    </datalist> 
+                    </select> 
                 </div>
                 <br>
             </div>
