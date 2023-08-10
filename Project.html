@@ -14,18 +14,18 @@
     <header><h2>Basic Details</h2></header> 
     <form action = "" class = "login-box" id="dataEntry" name="dataEntry">
         <section id = "right">
-                <div class="input-box">
+                <div class="input-box" id="nameBox">
                     <label for="fName">First Name</label><br>
                     <input type = "text" id="fName" name="fName" onfocusOut="return validateName()"> 
                 </div>     
                 <br>
-                <div class="input-box">
+                <div class="input-box" id="mailBox">
                     <label for="Email">Email ID</label>
                     <input type = "email" id="Email" name="Email" onfocusOut="return validateEmail()" >   
                     <!-- <i class='bx bx-check' ></i><br>this should come up after the emmail is succefully validated in java -->
                 </div>  
                 <br>
-                <div class="input-box">
+                <div class="input-box" id="countryBox">
                     <label for="Country">Country</label><br>
                     <input list="Countries" id="Country" name="Country" onfocusOut="return validateCountry()">
                     <datalist  id="Countries" >
@@ -36,7 +36,7 @@
                 </div> 
                     <br>
 
-                <div class="input-box">
+                <div class="input-box" id="phoneNoBox">
                     <label for="PhoneNumber">Phone Number</label><br>
                     <input type = "text" id="PhoneNumber" name="PhoneNumber" onfocusOut="return validateNumber()">          
                 </div>  
