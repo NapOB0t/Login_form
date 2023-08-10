@@ -11,7 +11,7 @@ function validateName(){
         document.getElementById("fName").value = "Enter a valid first name";
         document.getElementById("fName").style.color = "red";
         document.getElementById("nameBox").style.borderBottomColor = "red";
-        // icon
+        // icon for wrong answers
         let img = document.createElement("img");
         img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJoV-8oeENjG-ITsNG7xaLB4nhCZ3Vao8HCMt7YrhQCw&s"
         img.width = "30"
@@ -24,7 +24,7 @@ function validateName(){
     }else {
         document.getElementById("fName").style.color = "black";
         document.getElementById("nameBox").style.borderBottomColor = "black";
-        // icon
+        // icon for correct answers
         let img = document.createElement("img");
         img.src = "https://cdn.vectorstock.com/i/preview-1x/15/05/green-tick-checkmark-icon-vector-22691505.jpg"
         img.width = "40"
@@ -44,7 +44,7 @@ function validateEmail(){
         document.getElementById("Email").value = "Enter a valid Email";
         document.getElementById("Email").style.color = "red";
         document.getElementById("mailBox").style.borderBottomColor = "red";
-        // icon
+        // icon for the wrong answers
         let img = document.createElement("img");
         img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJoV-8oeENjG-ITsNG7xaLB4nhCZ3Vao8HCMt7YrhQCw&s"
         img.width = "30"
@@ -57,7 +57,7 @@ function validateEmail(){
     }else {
         document.getElementById("Email").style.color = "black";
         document.getElementById("mailBox").style.borderBottomColor = "black";
-        // icon
+        // icon for correct answers
         let img = document.createElement("img");
         img.src = "https://cdn.vectorstock.com/i/preview-1x/15/05/green-tick-checkmark-icon-vector-22691505.jpg"
         img.width = "40"
@@ -77,7 +77,7 @@ function validateCountry(){
         document.getElementById("Country").value = "Please select a country";
         document.getElementById("Country").style.color = "red";
         document.getElementById("countryBox").style.borderBottomColor = "red";
-        // icon
+        // icon for wrong answers
         let img = document.createElement("img");
         img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJoV-8oeENjG-ITsNG7xaLB4nhCZ3Vao8HCMt7YrhQCw&s"
         img.width = "30"
@@ -89,7 +89,7 @@ function validateCountry(){
     } else {
         document.getElementById("Country").style.color = "black";
         document.getElementById("countryBox").style.borderBottomColor = "black";
-        // icon
+        // icon for correct answers
         let img = document.createElement("img");
         img.src = "https://cdn.vectorstock.com/i/preview-1x/15/05/green-tick-checkmark-icon-vector-22691505.jpg"
         img.width = "40"
@@ -108,7 +108,7 @@ function validateNumber(){
         document.getElementById("PhoneNumber").value = "Enter a valid Phone Number";
         document.getElementById("PhoneNumber").style.color = "red";
         document.getElementById("phoneNoBox").style.borderBottomColor = "red";
-        // icons
+        // icons for wrong answers 
         let img = document.createElement("img");
         img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJoV-8oeENjG-ITsNG7xaLB4nhCZ3Vao8HCMt7YrhQCw&s"
         img.width = "30"
@@ -121,7 +121,7 @@ function validateNumber(){
     }else {
         document.getElementById("PhoneNumber").style.color = "black";
         document.getElementById("phoneNoBox").style.borderBottomColor = "black";
-        // icon
+        // icon for correct answers
         let img = document.createElement("img");
         img.src = "https://cdn.vectorstock.com/i/preview-1x/15/05/green-tick-checkmark-icon-vector-22691505.jpg"
         img.width = "40"
